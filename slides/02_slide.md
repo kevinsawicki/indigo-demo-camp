@@ -1,7 +1,8 @@
 !SLIDE bullets
-* Kevin Sawicki
+# Kevin Sawicki
+
 * GitHub developer
 * EGit committer
 * [@kevinsawicki](http://twitter.com/#!/kevinsawicki)
-* fork at [kevinsawicki/indigo-demo-camp](https://github.com/kevinsawicki/indigo-demo-camp)
+* [kevinsawicki/indigo-demo-camp](https://github.com/kevinsawicki/indigo-demo-camp)
 
