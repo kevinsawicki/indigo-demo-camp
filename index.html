@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Indigo Demo Camp</title>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+    <link rel="stylesheet" href="file/style.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+    setupPreso(false, './');
+  });
+  </script>
+</head>
+
+<body>
+
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">&larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">z</td><td>toggle help (this)</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="slides/01_slide">
+<h1>Indigo Demo Camp</h1>
+
+<h2>June 20th, 2011</h2>
+
+<h2>eBay</h2></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="slides/02_slide">
+<h1>Kevin Sawicki</h1>
+
+<ul>
+<li>GitHub developer</li>
+<li>EGit committer</li>
+<li><a href="http://twitter.com/#!/kevinsawicki">@kevinsawicki</a></li>
+<li><a href="https://github.com/kevinsawicki/indigo-demo-camp">kevinsawicki/indigo-demo-camp</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="slides/03_slide">
+<h1>Git In Indigo</h1>
+
+<ul>
+<li>EGit 1.0</li>
+<li>JGit 1.0</li>
+<li>GitHub Mylyn Connector 1.0</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="slides/04_slide/1">
+<h1>New in EGit since Helios</h1>
+
+<ul>
+<li>Synchronize view</li>
+<li>Pull support</li>
+<li>Rebase support</li>
+<li>Mylyn integration</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="slides/04_slide/2">
+<h1>New in EGit 1.0</h1>
+
+<ul>
+<li>Commit search</li>
+<li>Staging view</li>
+<li>Blame annotations</li>
+<li>Commit viewer</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="slides/05_slide/1">
+<h1>New in JGit since Helios</h1>
+
+<ul>
+<li>Rename detection</li>
+<li>Many commands: <code>clone, fetch</code></li>
+<li>Note support</li>
+<li><code>.gitignore</code> support</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="slides/05_slide/2">
+<h1>New in JGit 1.0</h1>
+
+<ul>
+<li>New commands: <code>ls-remote, clean</code></li>
+<li>Distributed hashtable support</li>
+<li>Ant tasks</li>
+<li>Blame support</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="slides/06_slide">
+<h1>New Mylyn Connector</h1>
+
+<ul>
+<li>GitHub issues support</li>
+<li>Gist support</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="slides/07_slide">
+<h1>Demo time!</h1></div>
+</div>
+</div>
+
+</body>
+</html>
